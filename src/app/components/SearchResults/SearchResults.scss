@@ -1,0 +1,38 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  padding: 20px 0 10px;
+}
+
+.firstColumn {
+  grid-column: 1/2;
+  font-size: 0;
+}
+
+.imagesDiv {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.lastColumn {
+  grid-column: 3/4;
+  font-size: 0;
+}
+
+.wrapper a img {
+  width: 300px;
+  height: 169px;
+  justify-self: center;
+  &:hover {
+  }
+}
+
+.wrapper a {
+  width: 300px;
+  height: 169px;
+  justify-self: center;
+}

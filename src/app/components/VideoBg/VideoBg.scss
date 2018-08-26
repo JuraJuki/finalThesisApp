@@ -1,0 +1,10 @@
+.bgVidDiv{
+    position: fixed;
+    left: 0px;
+    top: -8px;
+    min-width: 102%;
+    min-height: 1080px;
+    max-height: 1080px;
+    z-index: -1;
+    filter: blur(3px) brightness(60%);
+}

@@ -1,0 +1,86 @@
+.all {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px auto;
+}
+.profile {
+  color: white;
+  padding-top: 20px;
+  justify-self: center;
+}
+.profile > h3 {
+  font-size: 1.5em;
+}
+
+.profilePictureDiv {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.profilePicture {
+  width: 100%;
+  height: 100%;
+}
+
+.infoDiv {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 200px;
+  vertical-align: top;
+  border: 2px solid white;
+  border-radius: 3px 3px;
+}
+
+.infoDiv a:first-child {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.infoDiv p:first-child {
+  display: flex;
+}
+
+.infoDiv p:first-child > svg {
+  margin-right: 5px;
+}
+
+.uploads,
+.uploadViews,
+.uploadLikes,
+.uploadFavorites {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 690px) {
+  .all {
+    grid-template-rows: 1fr 0px;
+  }
+  .profile {
+    display: grid;
+  }
+  .profilePictureDiv {
+    justify-self: center;
+  }
+  .infoDiv {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .uploadStatsDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .infoDiv p:first-child {
+    display: inherit;
+  }
+  .infoDiv {
+    height: 100%;
+    font-size: 0.9em;
+  }
+}

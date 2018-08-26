@@ -1,0 +1,101 @@
+.all {
+  min-height: calc(100vh - 57px);
+  background-color: #242424;
+}
+
+.wrapperProfile {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+
+.firstColumn {
+  grid-column: 1/2;
+}
+
+.lastColumn {
+  grid-column: 3/4;
+}
+
+.images {
+  grid-column: 2/3;
+  margin: 30px 0 0 0;
+  border-top: 2px solid #5e5e5e;
+}
+
+@media only screen and (max-width: 1610px) {
+  .images > div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .images > div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 980px) {
+  .images > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .all {
+    grid-template-rows: 520px auto;
+  }
+  .images > div {
+    grid-template-columns: 1fr;
+  }
+
+  .profile {
+    display: grid;
+    grid-template-rows: 200px 200px 100px;
+  }
+  .profilePictureDiv {
+    grid-row: 1/2;
+    justify-self: center;
+  }
+  .infoDiv {
+    grid-row: 2/3;
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .infoDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.8fr;
+    height: 250px;
+  }
+  .infoDiv > h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .uploadStatsDiv {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .uploads {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .uploadViews {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .uploadLikes {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .uploadFavorites {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .profile > h3 {
+    margin-top: 50px;
+  }
+}

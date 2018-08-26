@@ -1,0 +1,15 @@
+.pictures {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 200px;
+  grid-auto-flow: row;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  padding-top: 15px;
+}
+
+.pictures img , .pictures img a{
+  width: 300px;
+  height: 169px;
+  justify-self: center;
+}

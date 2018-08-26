@@ -1,0 +1,41 @@
+.button{
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.green{
+    background-color: green;
+    &:hover{
+        background-color: rgb(72, 192, 88);
+    }
+}
+
+.blue {
+    background-color: rgb(41, 126, 206);
+    margin: 5px;
+    &:hover{
+        background-color: rgb(107, 160, 209);
+    }
+}
+
+.green_login{
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: #15CD72;
+    border: 0;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    margin: 0 0 10px;
+    height: 50px;
+    box-sizing: border-box;
+    &:hover{
+        background-color: rgb(134, 240, 187);
+    }
+}
